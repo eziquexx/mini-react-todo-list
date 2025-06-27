@@ -1,14 +1,17 @@
 # JELEE Mini Project - To-do List made with React
 리액트를 사용하여 To-do List를 만들고 GitHub Pages로 배포하는 개인 미니 프로젝트.
 
-:star: [JELEE Notion - Mini Project](https://www.notion.so/6c646943c1ce49e09175929af3e2711e?v=1b7171c6124349e388955a29009c864e)로 이동하면 해당 미니 프로젝트 또는 다른 프로젝트를 보실 수 있습니다. :star:
+:star: [JELEE Notion (Click!)](https://dev-jelee.notion.site/dev-jelee-5686cfa35c1b4c859a27de25d5fad5dd?pvs=4) 로 이동하면 해당 프로젝트 또는 다른 프로젝트의 내용과 저의 이력서를 볼 수 있습니다. :star:
 
 <br/>
 
 ## 	:speech_balloon: 프로젝트 소개
 학원 수업 시간에 배운 회원 목록 추가 예제를 활용하여 회원 목록 추가, 삭제 기능을 구현하였고 개별로 To-do List에서 필요한 완료 기능을 추가하여 To-do List를 만들었습니다.
 - 추가한 목록은 새로고침 또는 웹브라우저를 종료 후 실행시키면 사라집니다.
-- 후에 이 부분을 보강할 수 있으면 보강할 계획입니다.
+- 추가한 목록의 내용을 수정할 수 있습니다.
+- 추가한 목록의 체크박스에 체크를 하면 완료된 목록 영역으로 이동합니다.
+- 완료된 목록의 체크박스에 체크를 해제하면 추가한 목록 영역으로 이동합니다.
+- 추가한 목록, 완료된 목록은 삭제가 가능합니다.
 > [!CAUTION]
 > 경고: 이 미니 프로젝트는 상업적인 용도가 아닙니다.
 
@@ -21,9 +24,10 @@
 <br/>
 
 ## :calendar: 개발 기간
-2024-08-05 ~ 2024-08-07
+2024-08-05 ~ 2024-08-21
 - 08/05 구조 설계 및 개발 시작
 - 08/07 개발 완료
+- 08/12~08/20 수정 작업
 
 <br/>
 
@@ -55,9 +59,15 @@
 <br/>
 
 ## UX/UI 완성
-<img src="https://file.notion.so/f/f/88f41c08-964b-40ac-b3af-41d7c59069dc/6a089de4-1ab1-4154-9dc4-9aaa48b26e8c/image.png?table=block&id=c96f3854-d593-4d0a-8f55-e16a6b073d7c&spaceId=88f41c08-964b-40ac-b3af-41d7c59069dc&expirationTimestamp=1724335200000&signature=RpuchG9StvvV6LDmnQHdiKG5toL3v2O_X31qtV7na0I&downloadName=image.png" alt="todo list 데스크탑 화면">
-<img src="https://file.notion.so/f/f/88f41c08-964b-40ac-b3af-41d7c59069dc/f8636941-8794-4288-9935-30d8bae02183/image.png?table=block&id=2332ebd5-9be3-422f-b1e0-58cf8f83775e&spaceId=88f41c08-964b-40ac-b3af-41d7c59069dc&expirationTimestamp=1724335200000&signature=uCFN1xGe--JV5O6G3I_FzqZvtyoI-195Dw5ta_a42ng&downloadName=image.png" alt="todo list 태블릿, 모바일 화면">
-
+<div>
+  <span>데스크탑 화면(너비 1023px 이상 화면) ▼</span><br/>
+  <img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F88f41c08-964b-40ac-b3af-41d7c59069dc%2F6a089de4-1ab1-4154-9dc4-9aaa48b26e8c%2Fimage.png?table=block&id=c96f3854-d593-4d0a-8f55-e16a6b073d7c&spaceId=88f41c08-964b-40ac-b3af-41d7c59069dc&width=2000&userId=13ecba7f-2c86-40b5-b242-b399280ff4b8&cache=v2" alt="todo list 데스크탑 화면" style="width:48%;">
+</div>
+<div>
+  <span>태블릿, 모바일 화면(너비 1023px 미만 화면) ▼</span><br/>
+  <img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F88f41c08-964b-40ac-b3af-41d7c59069dc%2Ff8636941-8794-4288-9935-30d8bae02183%2Fimage.png?table=block&id=2332ebd5-9be3-422f-b1e0-58cf8f83775e&spaceId=88f41c08-964b-40ac-b3af-41d7c59069dc&width=2000&userId=13ecba7f-2c86-40b5-b242-b399280ff4b8&cache=v2" alt="todo list 태블릿, 모바일 화면" style="width:48%;">
+</div>
+  
 <br/>
 
 ## :gear: 주요 기능
@@ -87,7 +97,9 @@
 - enter키 방지
   - [React KeyboardEvent-onKeyDown](https://ko.react.dev/reference/react-dom/components/common#keyboardevent-handler)
 - 배열 정렬
-  - [MDN-Array.prototype.sort()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 
+  - [MDN-Array.prototype.sort()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- textarea 줄바꿈
+  - [CodeSandbox](https://codesandbox.io/p/sandbox/textarea-auto-resize-react-hngvd?file=%2Fsrc%2Findex.js%3A19%2C1)
 - styled-components
   - [styled-components](https://styled-components.com/)
 
