@@ -1,83 +1,68 @@
-# JELEE Mini Project - To-do List made with React
-리액트를 사용하여 To-do List를 만들고 GitHub Pages로 배포하는 개인 미니 프로젝트.
+# 📝✅ 할 일 목록 관리 애플리케이션
+> 리액트를 사용하여 To-do List를 만들고 GitHub Pages로 배포하는 개인 미니 프로젝트.<br>
+> 데이터는 로컬 스토리지 사용.
+```
+- 개발 기간: 24.08.05 ~ 24.08.21
+- 목적: React를 이해하고 개인이 가볍게 사용할 목적으로 React를 사용하여 To-do List를 제작하였습니다.
+```
+---
 
-:star: [JELEE Notion (Click!)](https://dev-jelee.notion.site/dev-jelee-5686cfa35c1b4c859a27de25d5fad5dd?pvs=4) 로 이동하면 해당 프로젝트 또는 다른 프로젝트의 내용과 저의 이력서를 볼 수 있습니다. :star:
+## 🧩 구현 기능
+1. 할 일 추가: 내용을 입력 후 + 버튼을 클릭하면 할 일이 목록에 추가된다.
+2. 할 일 삭제: 추가된 할 일 우측에 있는 - 버튼을 클릭하면 삭제된다.
+3. 할 일 수정: 추가된 할 일을 클릭하면 내용 수정이 가능하다.
+4. 할 일 완료: 추가된 할 일 좌측의 체크박스를 클릭하면 완료가 되고 할 일 완료 영역으로 이동된다.
+5. 할 일 취소: 할 일 완료 영역으로 이동된 할 일의 좌측에 체크박스를 클릭하면 다시 할 일 영역으로 이동된다.
+6. 스타일: 스타일 컴포넌트를 사용하여 스타일 주기
+7. 반응형: 브라우저 너비 마다 조절 (데스크탑, 태블릿+모바일 두 가지로 설정)
+8. 데이터: 로컬 스토리지를 통해 목록 관리
 
-<br/>
+---
 
-## 	:speech_balloon: 프로젝트 소개
-학원 수업 시간에 배운 회원 목록 추가 예제를 활용하여 회원 목록 추가, 삭제 기능을 구현하였고 개별로 To-do List에서 필요한 완료 기능을 추가하여 To-do List를 만들었습니다.
-- 추가한 목록은 새로고침 또는 웹브라우저를 종료 후 실행시키면 사라집니다.
-- 추가한 목록의 내용을 수정할 수 있습니다.
-- 추가한 목록의 체크박스에 체크를 하면 완료된 목록 영역으로 이동합니다.
-- 완료된 목록의 체크박스에 체크를 해제하면 추가한 목록 영역으로 이동합니다.
-- 추가한 목록, 완료된 목록은 삭제가 가능합니다.
-> [!CAUTION]
-> 경고: 이 미니 프로젝트는 상업적인 용도가 아닙니다.
-
-<br/>
-
-## :walking: 프로젝트 목적
-- React를 이해하기 위하여 React를 사용하여 간단한 To-do List를 제작하였습니다.
-- 개인이 가볍게 사용할 목적으로 제작하였습니다.
-
-<br/>
-
-## :calendar: 개발 기간
-2024-08-05 ~ 2024-08-21
-- 08/05 구조 설계 및 개발 시작
-- 08/07 개발 완료
-- 08/12~08/20 수정 작업
-
-<br/>
-
-## 	:star: 프로그래머
-- JELEE
-
-<br/>
-
-## :computer: 개발 환경
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
-- Visual Studio Code
-- GitHub
-- GitHub Pages
-
-<br/>
-
-## :clipboard: 기술 스택
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+## 🛠 사용 기술 스택
 - HTML5
 - CSS3
-- JavaScript
-- React
+- React, React Styled Component
+- Tools: VS Code, Git & GitHub, GitHub Pages
 
-<br/>
+---
 
-## UX/UI 완성
+## 🎬 배포 & 데모
+🚀 [배포 사이트 바로가기](https://eziquexx.github.io/mini-react-todo-list/) - GitHub Pages로 배포
+
+👉 [데모 영상 보러가기](https://youtu.be/_5Wo8z2qrWE?si=nVEj8VYz6TNBX_03) - 할 일 어플리케이션 데모 영상
+
+---
+
+## 📘 프로젝트 상세 기록 (블로그)
+👉 [포스팅 보러가기](https://dev-jelee.tistory.com/entry/mini-project-To-do-List-React) - 티스토리에 올린 포스트
+
+---
+
+## 📁 디렉토리 구조
+
+```
+📂 src/
+├── App.js                 // 할 일 메인 컴포넌트
+├── App.css                // 공통 스타일(CSS)
+├── components/
+│   ├── TodoCompInput.js   // 할 일 완료 영역 컴포넌트
+│   └── TodoListInput.js   // 할 일 기본 영역 컴포넌트
+```
+
+---
+
+## 🖼️ UX/UI
 <div>
-  <span>데스크탑 화면(너비 1023px 이상 화면) ▼</span><br/>
-  <img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F88f41c08-964b-40ac-b3af-41d7c59069dc%2F6a089de4-1ab1-4154-9dc4-9aaa48b26e8c%2Fimage.png?table=block&id=c96f3854-d593-4d0a-8f55-e16a6b073d7c&spaceId=88f41c08-964b-40ac-b3af-41d7c59069dc&width=2000&userId=13ecba7f-2c86-40b5-b242-b399280ff4b8&cache=v2" alt="todo list 데스크탑 화면" style="width:48%;">
-</div>
+  <span>▼▼ PC 화면 ▼▼</span><br/>
+  <img src="https://github.com/eziquexx/mini-react-todo-list/blob/develop/src/img/todolist_img01.png" alt="PC화면" style="width:48%;">
+</div><br>
 <div>
-  <span>태블릿, 모바일 화면(너비 1023px 미만 화면) ▼</span><br/>
-  <img src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F88f41c08-964b-40ac-b3af-41d7c59069dc%2Ff8636941-8794-4288-9935-30d8bae02183%2Fimage.png?table=block&id=2332ebd5-9be3-422f-b1e0-58cf8f83775e&spaceId=88f41c08-964b-40ac-b3af-41d7c59069dc&width=2000&userId=13ecba7f-2c86-40b5-b242-b399280ff4b8&cache=v2" alt="todo list 태블릿, 모바일 화면" style="width:48%;">
+  <span>▼▼ 태블릿, 모바일 화면 ▼▼</span><br/>
+  <img src="https://github.com/eziquexx/mini-react-todo-list/blob/develop/src/img/todolist_img02.png" alt="태블릿,모바일일화면" style="width:48%;">
 </div>
-  
-<br/>
 
-## :gear: 주요 기능
-- 할 일을 입력 후 + 버튼을 클릭하면 할 일이 추가됩니다.
-- 추가된 할 일을 체크 클릭하면 할 일 완료 상태로 바뀝니다.
-- 추가된 할 일의 내용을 수정할 수 있습니다.
-- 추가된 할 일, 또는 완료 상태의 할 일을 - 버튼을 클릭하여 삭제할 수 있습니다.
-- 반응형으로 제작하여 브라우저 너비 마다 다르게 보입니다. (데스크탑과 태블릿+모바일 기준으로 나누었습니다.)
-
-<br/>
+---
 
 ## :eyes: 개발 참고 자료
 - To do List 입력 후 추가, 삭제하는 기능 (학원 수업 때 배운 내용 참고)
@@ -103,7 +88,34 @@
 - styled-components
   - [styled-components](https://styled-components.com/)
 
-<br/>
+---
 
-## :label: 저작권 및 사용권 정보
-- 개인 미니 프로젝트이며 상업적이 용도가 아닙니다.
+## 💻 실행 방법 (VS Code 기준 설명)
+```
+# 1. 저장소 클론
+git clone https://github.com/eziquexx/mini-react-todo-list.git
+
+# 2. 프로젝트 디렉토리로 이동
+cd mini-random-flag-quiz
+
+# 3. node modules 설치
+npm install
+
+# 4. 실행
+npm start
+```
+
+---
+
+## ⬇️ 애플리케이션 설치
+```
+# 1. 배포 사이트로 이동
+https://eziquexx.github.io/mini-react-todo-list/
+
+# 2. 주소창 우측에 설치 모양 아이콘 클릭
+주소창 우측에 보면 🖥️↓ 모니터에 화살표 아래방향으로 있는 아이콘이 있다.
+마우스를 올리면 create react App sample 설치 라는 툴팁이 뜬다.
+이 아이콘을 클릭하여 설치하면 바탕화면에 애플리케이션이 설치된다.
+```
+
+---
