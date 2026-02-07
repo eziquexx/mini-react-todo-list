@@ -64,12 +64,10 @@
 ## 🎬 배포 & 데모
 🚀 [배포 사이트 바로가기](https://eziquexx.github.io/mini-react-todo-list/) - GitHub Pages로 배포
 
-👉 [데모 영상 보러가기](https://youtu.be/_5Wo8z2qrWE?si=nVEj8VYz6TNBX_03) - 할 일 어플리케이션 데모 영상
-
 ---
 
-## 📘 프로젝트 상세 기록 (블로그)
-👉 [포스팅 보러가기](https://dev-jelee.tistory.com/entry/mini-project-To-do-List-React) - 티스토리에 올린 포스트
+## 📘 프로젝트 상세 기록
+👉 [상세 보러가기](https://dev-jelee.notion.site/To-do-List-React-2c4d0316bc68817daea9fa9da5f7958c) - 노션에 올린 글
 
 ---
 
